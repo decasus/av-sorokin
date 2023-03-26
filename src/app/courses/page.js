@@ -1,5 +1,5 @@
 import PageHeader from "@/components/page-header/PageHeader";
-import CoursesGallery from "@/components/CoursesGallery/CoursesGallery";
+import CoursesGallery from "@/components/courses-gallery/CoursesGallery";
 
 const Courses = () => {
     return (
