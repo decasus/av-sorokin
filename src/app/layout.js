@@ -1,7 +1,7 @@
 import './globals.scss'
-import Header from "@/components/Header/Header";
+import Header from "@/components/header/Header";
 import { Inter } from 'next/font/google'
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: 'Сайт учителя физкультуры',

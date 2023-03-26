@@ -1,5 +1,5 @@
-import PageHeader from "@/components/PageHeader/PageHeader";
-import CustomTabs from "@/components/CustomTabs/CustomTabs";
+import PageHeader from "@/components/page-header/PageHeader";
+import CustomTabs from "@/components/custom-tabs/CustomTabs";
 
 
 const MyComponent = () => {

@@ -51,16 +51,16 @@ const Header = () => {
                         <Link href="/">Проекты учеников</Link>
                     </div>
                 </div>
-                <Link href="#">
+                <Link href="src/components/header/Header#">
                     <div className="menu__elem">ГТО</div>
                 </Link>
-                <Link href="#">
+                <Link href="src/components/header/Header#">
                     <div className="menu__elem">МО</div>
                 </Link>
-                <Link href="#">
+                <Link href="src/components/header/Header#">
                     <div className="menu__elem">Школьный спортклуб</div>
                 </Link>
-                <Link href="#">
+                <Link href="src/components/header/Header#">
                     <div className="menu__elem">Фотогалерея</div>
                 </Link>
             </nav>

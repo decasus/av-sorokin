@@ -1,6 +1,6 @@
 import portrait from "@/assets/images/portrait.png"
 import Image from "next/image";
-import PageHeader from "@/components/PageHeader/PageHeader";
+import PageHeader from "@/components/page-header/PageHeader";
 const About = () => {
     return (
         <>

@@ -1,4 +1,4 @@
-import PageHeader from "@/components/PageHeader/PageHeader";
+import PageHeader from "@/components/page-header/PageHeader";
 import CoursesGallery from "@/components/CoursesGallery/CoursesGallery";
 
 const Courses = () => {

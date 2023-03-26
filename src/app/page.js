@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import background from "@/assets/images/bg.jpg";
 import portrait from "@/assets/images/portrait.png";
-import GallerySmall from "@/components/GallerySmall/GallerySmall";
+import GallerySmall from "@/components/gallery-small/GallerySmall";
 
 export default function Home() {
 

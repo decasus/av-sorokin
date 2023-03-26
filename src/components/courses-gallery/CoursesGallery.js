@@ -3,7 +3,7 @@
 import courseImages from "@/constants/courses";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import NextJsImage from "@/components/NextJsImage/NextJsImage";
+import NextJsImage from "@/components/next-js-image/NextJsImage";
 import Image from "next/image";
 import {useState} from "react";
 

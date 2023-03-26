@@ -7,7 +7,7 @@ import home1 from "@/assets/images/home1.png";
 import home2 from "@/assets/images/home2.jpg";
 import home3 from "@/assets/images/home3.jpg";
 import home4 from "@/assets/images/home4.jpg";
-import NextJsImage from "@/components/NextJsImage/NextJsImage";
+import NextJsImage from "@/components/next-js-image/NextJsImage";
 import Image from "next/image";
 
 const GallerySmall = () => {

@@ -1,4 +1,4 @@
-import PageHeader from "@/components/PageHeader/PageHeader";
+import PageHeader from "@/components/page-header/PageHeader";
 import essay from "@/assets/images/essay.png";
 import Image from "next/image";
 

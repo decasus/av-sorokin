@@ -58,7 +58,7 @@ p {
   padding: 40px 20px;
 }
 
-@import "@/components/header/style";
+@import "../components/header/style";
 @import "page";
 @import "about/style";
 @import "essay/style";
