@@ -22,7 +22,7 @@ export default function NextJsImage({ slide, rect }) {
         : rect.height;
 
     return (
-        <div style={{ position: "relative", width, height }}>
+        <div style={{ position: "relative", width: "100%", height: "100%" }}>
             <Image
                 fill
                 alt=""

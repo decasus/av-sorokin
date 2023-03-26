@@ -1,0 +1,24 @@
+.complex {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__image {
+    color: #ff8000;
+  }
+  &__title {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.complexes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

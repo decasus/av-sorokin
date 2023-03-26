@@ -30,19 +30,19 @@
 
 .react-tabs {
   &__tab-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
   }
 }
 
 .react-tabs__tab--selected {
-  background-color: #4a78af;
-  border-color: #4a78af;
-  color: white;
+  background-color: #4a78af !important;
+  border-color: #4a78af !important;
+  color: white !important;
 }
 
 .react-tabs__tab-list {
-  border-bottom-color: #4a78af;
-  font-weight: 600;
+  border-bottom-color: #4a78af !important;
+  font-weight: 600 !important;
 }

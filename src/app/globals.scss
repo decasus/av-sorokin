@@ -24,6 +24,7 @@ main {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
@@ -31,6 +32,33 @@ p {
   font-size: 18px;
   margin-bottom: 20px;
 }
+
+ol {
+  list-style-position: outside;
+  font-size: 18px;
+  line-height: 28px;
+  a {
+    color: #2861A3;
+  }
+  li {
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+}
+.hometasks, .gto {
+  ul {
+    li {
+      &::marker {
+        color: #4a78af;
+      }
+      list-style: disc outside;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+  }
+}
+
 
 .page-header {
   height: 100px;
@@ -52,6 +80,28 @@ p {
   }
 }
 
+.file {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  &__icon {
+    color: #172e50;
+    &--ppt {
+      color: #D7451B;
+    }
+    &--pdf {
+      color: #AA0A00;
+    }
+  }
+
+  &__title {
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 700;
+  }
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -65,3 +115,8 @@ p {
 @import "qualification/style";
 @import "my-achievements/style";
 @import "courses/style";
+@import "schoolbook/style";
+@import "complexes/style";
+@import "gto/style";
+@import "association/style";
+@import "sportclub/style";

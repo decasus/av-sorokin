@@ -1,0 +1,16 @@
+.schoolbook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  &__image {
+
+  }
+  &__title {
+    margin-left: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    flex: 1;
+  }
+}

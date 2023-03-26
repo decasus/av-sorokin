@@ -28,17 +28,17 @@ const Header = () => {
                         <span className="dropdown__icon"><FontAwesomeIcon width={10} height={10} icon={faAngleDown}/></span>
                     </div>
                     <div className="dropdown__content">
-                        <Link href="/">Нормативная база</Link>
-                        <Link href="/">Рабочие программы</Link>
-                        <Link href="/">Учебники</Link>
-                        <Link href="/">Презентации</Link>
-                        <Link href="/">Внеклассные мероприятия</Link>
-                        <Link href="/">Работа со слабоуспевающими</Link>
-                        <Link href="/">Разработки уроков</Link>
-                        <Link href="/">Домашние задания</Link>
-                        <Link href="/">Инструкции по ФК</Link>
-                        <Link href="/">Тесты к олимпиадам</Link>
-                        <Link href="/">Комплексы упражнений</Link>
+                        <Link href="/regulatory-base">Нормативная база</Link>
+                        <Link href="/work-programs">Рабочие программы</Link>
+                        <Link href="/schoolbook">Учебники</Link>
+                        <Link href="/presentations">Презентации</Link>
+                        <Link href="/activities">Внеклассные мероприятия</Link>
+                        <Link href="/underachievement">Работа со слабоуспевающими</Link>
+                        <Link href="/lesson-development">Разработки уроков</Link>
+                        <Link href="/hometasks">Домашние задания</Link>
+                        <Link href="/instructions">Инструкции по ФК</Link>
+                        <Link href="/tests-for-olympiads">Тесты к олимпиадам</Link>
+                        <Link href="/complexes">Комплексы упражнений</Link>
                     </div>
                 </div>
                 <div className="dropdown">
@@ -47,20 +47,20 @@ const Header = () => {
                         <span className="dropdown__icon"><FontAwesomeIcon width={10} height={10} icon={faAngleDown}/></span>
                     </div>
                     <div className="dropdown__content">
-                        <Link href="/">Дипломы и грамоты</Link>
-                        <Link href="/">Проекты учеников</Link>
+                        <Link href="/diplomas">Дипломы и грамоты</Link>
+                        <Link href="/student-projects">Проекты учеников</Link>
                     </div>
                 </div>
-                <Link href="src/components/header/Header#">
+                <Link href="/gto">
                     <div className="menu__elem">ГТО</div>
                 </Link>
-                <Link href="src/components/header/Header#">
+                <Link href="/association">
                     <div className="menu__elem">МО</div>
                 </Link>
-                <Link href="src/components/header/Header#">
+                <Link href="/sportclub">
                     <div className="menu__elem">Школьный спортклуб</div>
                 </Link>
-                <Link href="src/components/header/Header#">
+                <Link href="/gallery">
                     <div className="menu__elem">Фотогалерея</div>
                 </Link>
             </nav>
