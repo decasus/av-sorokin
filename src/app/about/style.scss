@@ -1,0 +1,11 @@
+.biography {
+  display: flex;
+  &__photo {
+    margin: 0 30px;
+  }
+  &__text {
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

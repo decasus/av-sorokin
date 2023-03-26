@@ -1,0 +1,11 @@
+.courses {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+    margin: 10px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,48 @@
+.ats {
+  margin-top: 40px;
+  font-size: 18px;
+  &__title {
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  ul {
+    li {
+      &::marker {
+        color: #4a78af;
+      }
+      list-style: disc outside;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+  }
+  table {
+    font-size: 18px;
+    thead {
+      font-weight: 700;
+      background-color: #edf5ff;
+    }
+    td {
+      padding: 15px;
+    }
+  }
+}
+
+.react-tabs {
+  &__tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.react-tabs__tab--selected {
+  background-color: #4a78af;
+  border-color: #4a78af;
+  color: white;
+}
+
+.react-tabs__tab-list {
+  border-bottom-color: #4a78af;
+  font-weight: 600;
+}

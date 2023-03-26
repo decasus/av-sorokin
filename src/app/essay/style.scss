@@ -1,0 +1,14 @@
+.essay {
+  &__image {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  &__text {
+    &-title {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+}
