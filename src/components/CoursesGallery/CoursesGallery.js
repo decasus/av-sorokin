@@ -22,7 +22,7 @@ const CoursesGallery = () => {
     <>
         <div className="courses">
             {courseImages.map((img, index) =>
-                <Image src={img} onClick={openGallery(index)} width={250} alt={"image" + index}/>
+                <Image src={img} onClick={openGallery(index)} width={250} alt={"image" + index} key={index}/>
             )}
         </div>
         <Lightbox
