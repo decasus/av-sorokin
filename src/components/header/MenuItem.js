@@ -1,14 +1,10 @@
 'use client'
 
-import {useRouter} from "next/navigation";
+import Link from "next/link";
 
 const MenuItem = ({title, route, closeMenu, dropdown}) => {
-    const router = useRouter()
-    const handleRoute = async () => {
-        await router.push(route);
-        closeMenu();
-    }
-    return <div className={dropdown ? `dropdown__elem` : `menu__elem`} onClick={handleRoute}>{title}</div>
+    const handleRoute = () => closeMenu();
+    return <Link className={dropdown ? `dropdown__elem` : `menu__elem`} onClick={handleRoute} href={route}>{title}</Link>
 }
 
 export default MenuItem;
