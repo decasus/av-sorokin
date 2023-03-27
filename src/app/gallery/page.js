@@ -4,7 +4,7 @@ import PhotoGallery from "@/components/gallery/PhotoGallery";
 const GalleryPage = () => {
     return (
         <>
-        <PageHeader></PageHeader>
+        <PageHeader>Галерея</PageHeader>
             <div className="container">
                 <PhotoGallery/>
             </div>

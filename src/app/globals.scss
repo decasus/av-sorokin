@@ -80,12 +80,20 @@ ol {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .page-header {
+    font-size: 30px;
+  }
+}
+
 .file {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
   &__icon {
     color: #172e50;
+    width: 30px;
+    height: 30px !important;
     &--ppt {
       color: #D7451B;
     }

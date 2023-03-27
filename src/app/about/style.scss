@@ -2,10 +2,22 @@
   display: flex;
   &__photo {
     margin: 0 30px;
+    flex: 1;
   }
   &__text {
     p {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .biography {
+    flex-wrap: wrap;
+    &__photo {
+    }
+    &__text {
+      margin-top: 40px;
     }
   }
 }

@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={inter.className}>
       <Header/>
       <main>

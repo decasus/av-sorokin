@@ -46,3 +46,32 @@
   border-bottom-color: #4a78af !important;
   font-weight: 600 !important;
 }
+
+@media only screen and (max-width: 870px) {
+  .react-tabs {
+    &__tab-list {
+      justify-content: center !important;
+    }
+    &__tab {
+      padding: 10px 10px !important;
+      width: 100% !important;
+    }
+  }
+  table {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  table {
+    font-size: 16px !important;
+    td {
+      padding: 5px !important;
+
+    }
+    thead {
+      hyphens: auto;
+    }
+
+  }
+}

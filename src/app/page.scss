@@ -42,7 +42,7 @@
 .welcome {
   padding: 80px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   &__col {
     width: 30%;
     display: flex;
@@ -76,5 +76,55 @@
   img {
     margin: 0 5px;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .sm-gallery {
+    width: 70%;
+    margin: 0 auto;
+    img {
+      margin: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-block {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 80vw auto;
+    align-items: flex-end;
+    padding-bottom: 0;
+    &__hidden {
+      width: 0;
+    }
+    &__wrapper {
+      width: 100vw;
+      text-align: center;
+    }
+    &__header {
+      font-size: 40px;
+    }
+  }
+  .welcome {
+    flex-flow: column-reverse;
+    align-items: center;
+    &__col {
+      margin: 0 0 40px 0;
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main-block {
+    background-size: 100vw auto;
+    &__header {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__subheader {
+      font-size: 16px;
+    }
   }
 }
