@@ -1,5 +1,5 @@
 import PageHeader from "@/components/page-header/PageHeader";
-import essay from "@/assets/images/essay.png";
+import essay from "@/assets/images/home3.jpg";
 import Image from "next/image";
 
 const Essay = () => {

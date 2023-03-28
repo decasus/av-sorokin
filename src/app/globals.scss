@@ -116,6 +116,13 @@ ol {
   padding: 40px 20px;
 }
 
+.presentations {
+  h4 {
+    font-size: 18px;
+    margin: 60px 0;
+  }
+}
+
 @import "../components/header/style";
 @import "page";
 @import "about/style";
