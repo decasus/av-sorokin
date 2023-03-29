@@ -15,8 +15,8 @@ const News = () => {
             <PageHeader>Новости</PageHeader>
             <div className="container">
                 <div className="posts">
-                    {postMetadata.map(post => (
-                        <Link href={"news/" + post.slug}><div className="post-preview" key={post.slug}>
+                    {postMetadata.map((post, id) => (
+                        <Link href={"news/" + post.slug} key={id}><div className="post-preview">
                             <div className="post-preview__image">
                                 <Image src={`/posts/${post.image}`}
                                        fill
