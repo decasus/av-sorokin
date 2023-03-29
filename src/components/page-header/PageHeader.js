@@ -1,6 +1,6 @@
-const PageHeader = ({children}) => {
+const PageHeader = ({children, small}) => {
     return (
-        <header className="page-header"><div>{children}</div></header>
+        <header className={`page-header ${small && `page-header--small`}`}><div>{children}</div></header>
     );
 };
 

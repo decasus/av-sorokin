@@ -19,6 +19,7 @@ const Menu = () => {
         <>
             <nav className={`menu ${open && `menu--active`}`}>
                 <MenuItem title="Главная" route="/" closeMenu={closeMenu}/>
+                <MenuItem title="Новости" route="news" closeMenu={closeMenu}/>
                 <Dropdown
                     title="Обо мне"
                     items={[
@@ -53,9 +54,16 @@ const Menu = () => {
                     ]}
                     closeMenu={closeMenu}/>
                 <div className="hidden-br"/>
+                <Dropdown
+                    title="Объединения"
+                    items={[
+                        {href: "association", title: "Методическое объединение"},
+                        {href: "sportclub", title: "Школьный спортклуб"},
+                    ]}
+                />
                 <MenuItem title="ГТО" route="gto" closeMenu={closeMenu}/>
-                <MenuItem title="МО" route="association" closeMenu={closeMenu}/>
-                <MenuItem title="Школьный спортклуб" route="sportclub" closeMenu={closeMenu}/>
+                {/*<MenuItem title="МО" route="association" closeMenu={closeMenu}/>*/}
+                {/*<MenuItem title="Школьный спортклуб" route="sportclub" closeMenu={closeMenu}/>*/}
                 <MenuItem title="Галерея" route="gallery" closeMenu={closeMenu}/>
             </nav>
             <div className={`menu-btn ${open && 'menu-btn--active'}`} onClick={toggleMenu}>

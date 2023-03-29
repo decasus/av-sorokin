@@ -16,7 +16,7 @@ const Dropdown = ({title, items, closeMenu}) => {
         const handleWindowResize = () => setWindowSize(window.innerWidth);
         window.addEventListener('resize', handleWindowResize);
         return () => window.removeEventListener('resize', handleWindowResize);
-    });
+    }, []);
 
     useEffect(() => {
         setIsDesktop(windowSize > 768)
