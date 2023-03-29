@@ -6,7 +6,7 @@ const Activities = () => {
         <>
             <PageHeader>Внеклассные мероприятия</PageHeader>
             <div className="container">
-                <Doc file="/files/activities/План-Здоровье-и-спорт-2019-2020-год-2.docx" type="doc" title="План Здоровье и спорт 2019-2020 год"/>
+                <Doc file="/files/activities/План-Здоровье-и-спорт-2019-2020-год-2.docx" title="План Здоровье и спорт 2019-2020 год"/>
             </div>
         </>
     );

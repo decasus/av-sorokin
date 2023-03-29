@@ -12,7 +12,6 @@ const Diplomas = () => {
         <PageHeader>Дипломы учеников</PageHeader>
             <div className="container">
                 <DiplomasGallery/>
-                {/*<Gallery set={sets.diplomas}/>*/}
             </div>
         </>
     );

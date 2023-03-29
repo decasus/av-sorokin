@@ -2,6 +2,7 @@ import PageHeader from "@/components/page-header/PageHeader";
 import getPostMetadata from "@/components/post/getPostMetadata";
 import Link from "next/link";
 import Image from "next/image";
+import rgbDataURL from "@/utils/rgbDataURL";
 
 const convertPostDate = (string) => {
     return new Date(Date.parse(string)).toLocaleString("ru",
@@ -21,6 +22,8 @@ const News = () => {
                                 <Image src={`/posts/${post.image}`}
                                        fill
                                        sizes="640px"
+                                       placeholder="blur"
+                                       blurDataURL={rgbDataURL(40, 97, 163)}
                                        alt="Фотография"/>
                             </div>
                             <div className="post-preview__content">

@@ -4,6 +4,7 @@ import Markdown from "markdown-to-jsx";
 import getPostMetadata from "@/components/post/getPostMetadata";
 import PageHeader from "@/components/page-header/PageHeader";
 import Image from "next/image";
+import PostImage from "@/components/post/PostImage";
 
 const getPostContent = (slug) => {
     const folder = "src/posts/";
@@ -36,12 +37,7 @@ const PostPage = (props) => {
                     <h1 className="post__title">{post.data.title}</h1>
                     <p className="post__date">{convertPostDate(post.data.date)}</p>
                     <article className="post__content">
-                        <div className="post__image">
-                            <Image src={"/posts/" + post.data.image}
-                                   fill
-                                   sizes="640px"
-                                   alt="Фотография"/>
-                        </div>
+                        <PostImage src={post.data.image}/>
                         <div className="post__text"><Markdown>{post.content}</Markdown></div>
                     </article>
                 </div>

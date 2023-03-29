@@ -20,9 +20,9 @@ const Page = () => {
                         <Image src={flag} alt="Флаг спортклуба" width={400} placeholder="blur"/>
                     </div>
                     <div className="sportclub__files">
-                        <Doc file="/files/sportclub/Приказ о создании ШСК.pdf" type="pdf" title="Приказ о создании ШСК"/>
-                        <Doc file="/files/sportclub/Положение о ШСК 2017 год.docx" type="doc" title="Положение о ШСК"/>
-                        <Doc file="/files/sportclub/Анализ_работы_школьного_спортивно_клуба.docx" type="doc" title="Анализ работы ШСК"/>
+                        <Doc file="/files/sportclub/Приказ о создании ШСК.pdf" title="Приказ о создании ШСК"/>
+                        <Doc file="/files/sportclub/Положение о ШСК 2017 год.docx" title="Положение о ШСК"/>
+                        <Doc file="/files/sportclub/Анализ_работы_школьного_спортивно_клуба.docx" title="Анализ работы ШСК"/>
                     </div>
                 </div>
             </div>
