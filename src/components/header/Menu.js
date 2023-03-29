@@ -60,10 +60,9 @@ const Menu = () => {
                         {href: "association", title: "Методическое объединение"},
                         {href: "sportclub", title: "Школьный спортклуб"},
                     ]}
+                    closeMenu={closeMenu}
                 />
                 <MenuItem title="ГТО" route="gto" closeMenu={closeMenu}/>
-                {/*<MenuItem title="МО" route="association" closeMenu={closeMenu}/>*/}
-                {/*<MenuItem title="Школьный спортклуб" route="sportclub" closeMenu={closeMenu}/>*/}
                 <MenuItem title="Галерея" route="gallery" closeMenu={closeMenu}/>
             </nav>
             <div className={`menu-btn ${open && 'menu-btn--active'}`} onClick={toggleMenu}>
