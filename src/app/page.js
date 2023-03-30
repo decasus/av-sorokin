@@ -2,9 +2,9 @@ import Image from 'next/image'
 import background from "@/assets/images/bg.jpg";
 import portrait from "@/assets/images/portrait.png";
 import GallerySmall from "@/components/gallery-small/GallerySmall";
+import LastPosts from "@/components/post/LastPosts";
 
 export default function Home() {
-
     return (
         <>
             <section className="main-block" style={{backgroundImage: `url(${background.src})`}}>
@@ -15,6 +15,10 @@ export default function Home() {
                 </div>
             </section>
             <section className="welcome-block">
+                {/*<div className="last-posts">*/}
+                {/*    <div className="last-posts__content"><LastPosts/></div>*/}
+                {/*    </div>*/}
+
                 <div className="welcome">
                     <div className="welcome__col">
                         <div className="welcome__title">Здравствуйте, уважаемые коллеги, родители, учащиеся и гости сайта</div>

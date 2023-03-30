@@ -8,9 +8,11 @@
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 35vw auto;
+
   &__hidden {
     width: 30%;
   }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -23,10 +25,12 @@
     max-width: 800px;
     z-index: 0;
   }
+
   &__subheader {
     font-weight: 700;
     font-size: 16px;
   }
+
   &__header {
     font-size: 45px;
     font-weight: 900;
@@ -37,12 +41,14 @@
 .welcome-block {
   background-color: #f8f8f8;
   width: 100%;
-  min-height: 475px;
+  //min-height: 475px;
 }
+
 .welcome {
   padding: 80px 20px;
   display: flex;
   justify-content: space-evenly;
+
   &__col {
     width: 30%;
     display: flex;
@@ -51,10 +57,12 @@
     flex-direction: column;
     margin: 0 10px;
   }
+
   &__title {
     font-size: 20px;
     font-weight: 700;
   }
+
   &__text {
     margin-top: 30px;
     font-size: 18px;
@@ -65,6 +73,7 @@
 .gallery-block {
   width: 100%;
   min-height: 250px;
+  background-color: #e6edf5;
 }
 
 .sm-gallery {
@@ -73,16 +82,43 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
   img {
     margin: 0 5px;
     cursor: pointer;
   }
 }
 
+.last-posts {
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .post-preview {
+      width: 50%;
+      margin: 0 10px;
+      justify-content: flex-start;
+      &__image {
+        margin-right: 15px;
+        margin-bottom: 10px;
+      }
+      &__content {
+      }
+    }
+
+  }
+
+}
+
 @media only screen and (max-width: 1100px) {
   .sm-gallery {
     width: 70%;
     margin: 0 auto;
+
     img {
       margin: 10px;
     }
@@ -96,13 +132,16 @@
     background-size: 80vw auto;
     align-items: flex-end;
     padding-bottom: 0;
+
     &__hidden {
       width: 0;
     }
+
     &__wrapper {
       width: 100vw;
       text-align: center;
     }
+
     &__header {
       font-size: 40px;
     }
@@ -110,19 +149,23 @@
   .welcome {
     flex-flow: column-reverse;
     align-items: center;
+
     &__col {
       margin: 0 0 40px 0;
       width: 80%;
     }
   }
 }
+
 @media only screen and (max-width: 500px) {
   .main-block {
     background-size: 100vw auto;
+
     &__header {
       font-size: 30px;
       line-height: 35px;
     }
+
     &__subheader {
       font-size: 16px;
     }
