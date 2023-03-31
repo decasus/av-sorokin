@@ -15,9 +15,9 @@ export default function Home() {
                 </div>
             </section>
             <section className="welcome-block">
-                {/*<div className="last-posts">*/}
-                {/*    <div className="last-posts__content"><LastPosts/></div>*/}
-                {/*    </div>*/}
+{/*                <div className="last-posts">
+                    <div className="last-posts__content"><LastPosts/></div>
+                    </div>*/}
 
                 <div className="welcome">
                     <div className="welcome__col">

@@ -49,6 +49,7 @@ const Menu = () => {
                 <Dropdown
                     title="Достижения учеников"
                     items={[
+                        {href: "student-achievements", title: "Список достижений"},
                         {href: "diplomas", title: "Дипломы и грамоты"},
                         {href: "student-projects", title: "Проекты учеников"}
                     ]}

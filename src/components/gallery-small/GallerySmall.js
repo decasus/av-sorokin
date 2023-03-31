@@ -11,26 +11,17 @@ import NextJsImage from "@/components/next-js-image/NextJsImage";
 import Image from "next/image";
 
 const GallerySmall = () => {
-    const [open, setOpen] = useState(false);
-    const [index, setIndex] = useState(0);
-    const openGallery = (index) => {
-        return () => {
-            setOpen(true);
-            setIndex(index)
-        }
-    }
-
-
+    const [index, setIndex] = useState(-1);
 return (
         <div className="sm-gallery">
-            <Image onClick={openGallery(0)} src={home1} alt="home" width={250} placeholder="blur"></Image>
-            <Image onClick={openGallery(1)} src={home2} alt="home" width={250} placeholder="blur"></Image>
-            <Image onClick={openGallery(2)} src={home3} alt="home" width={250} placeholder="blur"></Image>
-            <Image onClick={openGallery(3)} src={home4} alt="home" width={250} placeholder="blur"></Image>
+            <Image onClick={() => setIndex(0)} src={home1} alt="home" width={250} placeholder="blur"></Image>
+            <Image onClick={() => setIndex(1)} src={home2} alt="home" width={250} placeholder="blur"></Image>
+            <Image onClick={() => setIndex(2)} src={home3} alt="home" width={250} placeholder="blur"></Image>
+            <Image onClick={() => setIndex(3)} src={home4} alt="home" width={250} placeholder="blur"></Image>
             <Lightbox
-            open={open}
+            open={index >= 0}
             index={index}
-            close={() => setOpen(false)}
+            close={() => setIndex(-1)}
             slides={[home1, home2, home3, home4]}
             render={{slide: NextJsImage}}/>
         </div>

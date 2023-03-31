@@ -25,7 +25,6 @@ const convertPostDate = (string) => {
         {day: "numeric", year: "numeric", month: "long"})
 }
 
-
 const PostPage = (props) => {
     const slug = props.params.slug;
     const post = getPostContent(slug);

@@ -5,8 +5,12 @@ const imagesList = () => {
     return images.slice(images.length/2);
 }
 
+const images = imagesList().map(module =>
+    module = {src: module.default.src, width: module.default.width, height: module.default.height}
+)
+
 const DiplomasGallery = () => {
-    return <Gallery images={imagesList()}></Gallery>
+    return <Gallery images={images}></Gallery>
 };
 
 export default DiplomasGallery;

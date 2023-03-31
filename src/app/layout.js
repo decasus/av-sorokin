@@ -8,7 +8,11 @@ export const metadata = {
   description: 'Сайт учителя физической культуры МОУ СОШ №1 г. Гаврилов-Ям',
 }
 
-const inter = Inter({ subsets: ["latin", "cyrillic"] })
+
+const inter = Inter({
+    subsets: ["latin", "cyrillic"],
+    variable: '--inter-font'
+})
 
 export default function RootLayout({ children }) {
   return (

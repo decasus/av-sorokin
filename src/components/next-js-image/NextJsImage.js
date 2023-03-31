@@ -4,6 +4,7 @@ import {
     isImageSlide,
     useLightboxProps,
 } from "yet-another-react-lightbox/core";
+import rgbDataURL from "@/utils/rgbDataURL";
 
 export default function NextJsImage({ slide, rect, placeholder = true }) {
     const { imageFit } = useLightboxProps().carousel;
@@ -28,7 +29,8 @@ export default function NextJsImage({ slide, rect, placeholder = true }) {
                 alt=""
                 src={slide}
                 loading="eager"
-                placeholder={placeholder ? "blur" : "empty"}
+                placeholder="blur"
+                blurDataURL={rgbDataURL(40, 97, 163)}
                 draggable={false}
                 style={{ objectFit: cover ? "cover" : "contain" }}
                 sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
