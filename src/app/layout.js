@@ -15,6 +15,7 @@ const inter = Inter({
 })
 
 export default function RootLayout({ children }) {
+    console.log(children.props.template)
   return (
     <html lang="ru">
       <body className={inter.className}>

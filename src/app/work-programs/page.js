@@ -1,7 +1,7 @@
 import PageHeader from "@/components/page-header/PageHeader";
 import Doc from "@/components/document/Document";
 
-const Programms = () => {
+const Programms = ({title = "Рабочие программы"}) => {
     return (
         <>
             <PageHeader>Рабочие программы</PageHeader>

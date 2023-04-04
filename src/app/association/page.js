@@ -12,6 +12,8 @@ const Page = () => {
                     <div className="mo__image"><Image src={mo} alt="Методическое объединение" width={500}
                                                       placeholder="blur"/></div>
                     <div className="mo__files">
+                        <Doc file="/files/mo/План-работы-МО-по-ФК-на-2022-23г.docx"
+                             title="План работы МО по ФК на 2022-23 г"/>
                         <Doc file="/files/mo/Мет_разработка_2020_для_кннкурса2.docx"
                              title="Методическая разработка 2020 для конкурса"
                             />
