@@ -35,6 +35,7 @@ const Menu = () => {
                     items={[
                         {href: "regulatory-base", title: "Нормативная база"},
                         {href: "work-programs", title: "Рабочие программы"},
+                        {href: "methodical-development", title: "Методические разработки"},
                         {href: "schoolbook", title: "Учебники"},
                         {href: "presentations", title: "Презентации"},
                         {href: "activities", title: "Внеклассные мероприятия"},
