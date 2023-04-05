@@ -9,6 +9,12 @@ const StudentProjects = () => {
                 <Doc file="/files/student-projects/Проект_Кочулина_Полина_Бег,_как_средство_укрепления_здоровья_1.docx"
                      title="Бег, как средство укрепления здоровья"
                 />
+                <Doc file="/files/student-projects/Kalenova_proekt_GTO.docx"
+                     title="Комплекс ГТО и его значение в жизни общества"
+                />
+                <Doc file="/files/student-projects/ГТО-презентация.pptx"
+                     title="Комплекс ГТО и его значение в жизни общества"
+                />
                 <Doc file="/files/student-projects/Физкультура.-нагрузка-на-детей-с-ослабленным-здоровьем.ppt"
                      title="Физкультура. Нагрузка на детей с ослабленным здоровьем"
                 />
