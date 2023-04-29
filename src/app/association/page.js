@@ -1,6 +1,6 @@
 import PageHeader from "@/components/page-header/PageHeader";
 import Doc from "@/components/document/Document";
-import mo from "@/assets/images/mo.png";
+import mo from "@/assets/images/mo.jpg";
 import Image from "next/image";
 
 const Page = () => {
