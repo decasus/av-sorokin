@@ -24,8 +24,9 @@ const getPostMetadata = async (offset, limit, all = false) => {
 
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
   // Get gray-matter data from each file.
-  return markdownPosts
-    .map(async (fileName) => {
+
+  const posts = await Promise.all(
+    markdownPosts.map(async (fileName) => {
       const filePath = path.join(folder, fileName);
       const fileContents = await fs.readFile(filePath, "utf8");
 
@@ -38,7 +39,10 @@ const getPostMetadata = async (offset, limit, all = false) => {
         image: matterResult.data.image,
         slug: fileName.replace(".md", ""),
       };
-    })
+    }),
+  );
+
+  return posts
     .sort((a, b) => {
       if (a.date < b.date) {
         return 1;
