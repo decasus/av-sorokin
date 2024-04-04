@@ -1,9 +1,10 @@
 "use server";
 
-import fs from "fs";
+import { promises as fs } from "fs";
+import path from "path";
+
 import matter from "gray-matter";
 import { getCldImageUrl } from "next-cloudinary";
-
 /*const createBlurImage = async (image) => {
   const imageUrl = getCldImageUrl({
     src: image,
@@ -18,15 +19,18 @@ import { getCldImageUrl } from "next-cloudinary";
 };*/
 
 const getPostMetadata = async (offset, limit, all = false) => {
-  const folder = "src/posts/";
-  const files = fs.readdirSync(folder);
-  const markdownPosts = files.filter((file) => file.endsWith(".md"));
+  const folder = path.join(process.cwd(), "src/posts");
+  const files = await fs.readdir(folder);
 
+  const markdownPosts = files.filter((file) => file.endsWith(".md"));
   // Get gray-matter data from each file.
   return markdownPosts
-    .map((fileName) => {
-      const fileContents = fs.readFileSync(`src/posts/${fileName}`, "utf8");
+    .map(async (fileName) => {
+      const filePath = path.join(folder, fileName);
+      const fileContents = await fs.readFile(filePath, "utf8");
+
       const matterResult = matter(fileContents);
+
       return {
         title: matterResult.data.title,
         date: matterResult.data.date,

@@ -5,7 +5,7 @@ import Posts from "@/components/post/Posts";
 import { getCldImageUrl } from "next-cloudinary";
 
 const News = async () => {
-  const initialPosts = await getPostMetadata(0, 6);
+  const initialPosts = await Promise.all(await getPostMetadata(0, 6));
 
   return (
     <>

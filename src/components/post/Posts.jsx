@@ -14,7 +14,9 @@ const Posts = ({ initialData }) => {
 
   const loadMorePosts = async () => {
     if (!endOfPage) {
-      const nextPosts = await getPostMetadata(offset, offset + 6);
+      const nextPosts = await Promise.all(
+        await getPostMetadata(offset, offset + 6),
+      );
       setPosts([...posts, ...nextPosts]);
       setOffset(offset + 6);
       if (nextPosts.length === 0) setEndOfPage(true);
