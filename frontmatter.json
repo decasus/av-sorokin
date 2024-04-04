@@ -1,0 +1,51 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "defaultFileName": "{{slug}}",
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Subtitle",
+          "name": "subtitle",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "title": "Image",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "editable": true,
+          "default": "{{slug}}"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.taxonomy.alignFilename": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "posts",
+      "path": "[[workspace]]/src/posts"
+    }
+  ]
+}

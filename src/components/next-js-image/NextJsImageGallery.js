@@ -14,7 +14,7 @@ export default function NextJsImageGallery({
                     src={src}
                     alt={alt}
                     title={title}
-                    sizes="400px"
+                    sizes="20vw"
                     placeholder="blur"
                     blurDataURL={rgbDataURL(40, 97, 163)}
                     className={className}

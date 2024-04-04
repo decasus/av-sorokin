@@ -1,21 +1,22 @@
 import PageHeader from "@/components/page-header/PageHeader";
 import getPostMetadata from "@/components/post/getPostMetadata";
-import PostPreview from "@/components/post/PostPreview";
 
-const News = () => {
-    const postMetadata = getPostMetadata();
-    return (
-        <>
-            <PageHeader>Новости</PageHeader>
-            <div className="container">
-                <div className="posts">
-                    {postMetadata.map((post, id) => (
-                        <PostPreview post={post} id={id} key={id}/>
-                    ))}
-                </div>
-            </div>
-        </>
-    );
+import Posts from "@/components/post/Posts";
+import { getCldImageUrl } from "next-cloudinary";
+
+const News = async () => {
+  const initialPosts = await getPostMetadata(0, 6);
+
+  return (
+    <>
+      <PageHeader>Новости</PageHeader>
+      <div className="container">
+        <div className="posts">
+          <Posts initialData={initialPosts} />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default News;
