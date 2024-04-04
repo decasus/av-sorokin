@@ -4,7 +4,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import { getCldImageUrl } from "next-cloudinary";
 
-const createBlurImage = async (image) => {
+/*const createBlurImage = async (image) => {
   const imageUrl = getCldImageUrl({
     src: image,
     width: 100,
@@ -15,7 +15,7 @@ const createBlurImage = async (image) => {
   const buffer = Buffer.from(arrayBuffer);
   const base64 = buffer.toString("base64");
   return `data:${response.type};base64,${base64}`;
-};
+};*/
 
 const getPostMetadata = async (offset, limit, all = false) => {
   const folder = "src/posts/";
@@ -32,7 +32,6 @@ const getPostMetadata = async (offset, limit, all = false) => {
         date: matterResult.data.date,
         subtitle: matterResult.data.subtitle,
         image: matterResult.data.image,
-        /*        blurImage: await createBlurImage(matterResult.data.image),*/
         slug: fileName.replace(".md", ""),
       };
     })
