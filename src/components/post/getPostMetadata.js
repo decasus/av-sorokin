@@ -5,7 +5,8 @@ import path from "path";
 
 import matter from "gray-matter";
 import { getCldImageUrl } from "next-cloudinary";
-/*const createBlurImage = async (image) => {
+
+const createBlurImage = async (image) => {
   const imageUrl = getCldImageUrl({
     src: image,
     width: 100,
@@ -16,7 +17,7 @@ import { getCldImageUrl } from "next-cloudinary";
   const buffer = Buffer.from(arrayBuffer);
   const base64 = buffer.toString("base64");
   return `data:${response.type};base64,${base64}`;
-};*/
+};
 
 const getPostMetadata = async (offset, limit, all = false) => {
   const folder = path.join(process.cwd(), "src/posts");
@@ -37,20 +38,27 @@ const getPostMetadata = async (offset, limit, all = false) => {
         date: matterResult.data.date,
         subtitle: matterResult.data.subtitle,
         image: matterResult.data.image,
+        /*        blurImage: await createBlurImage(matterResult.data.image),*/
         slug: fileName.replace(".md", ""),
       };
     }),
   );
 
-  return posts
-    .sort((a, b) => {
-      if (a.date < b.date) {
-        return 1;
-      } else {
-        return -1;
-      }
-    })
-    .slice(offset, all ? markdownPosts.length : limit);
+  return await Promise.all(
+    posts
+      .sort((a, b) => {
+        if (a.date < b.date) {
+          return 1;
+        } else {
+          return -1;
+        }
+      })
+      .slice(offset, all ? markdownPosts.length : limit)
+      .map(async (post) => {
+        const blurredImage = await createBlurImage(post.image);
+        return { ...post, blurImage: blurredImage };
+      }),
+  );
 };
 
 export default getPostMetadata;

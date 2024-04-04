@@ -11,10 +11,11 @@ const convertPostDate = (string) => {
 };
 
 const PostPreview = ({ post, id }) => {
+  console.log(post);
   return (
     <Link href={"news/" + post.slug} key={id} className="post-preview">
       <div className="post-preview__image">
-        <PreviewImage src={post.image} blurImage={"post.blurImage"} />
+        <PreviewImage src={post.image} blurImage={post.blurImage} />
       </div>
       <div className="post-preview__content">
         <div className="post-preview__date">{convertPostDate(post.date)}</div>
