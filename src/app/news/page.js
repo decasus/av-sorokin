@@ -10,10 +10,8 @@ const News = async () => {
   return (
     <>
       <PageHeader>Новости</PageHeader>
-      <div className="container">
-        <div className="posts">
-          <Posts initialData={initialPosts} />
-        </div>
+      <div className="posts mt-10 flex justify-center flex-col items-center">
+        <Posts initialData={initialPosts} />
       </div>
     </>
   );

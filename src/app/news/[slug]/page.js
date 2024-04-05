@@ -40,7 +40,7 @@ const PostPage = (props) => {
           <p className="post__date">{convertPostDate(post.data.date)}</p>
           <article className="post__content">
             <PostImage src={post.data.image} />
-            <div className="post__text">
+            <div className="post__text prose">
               <Markdown>{post.content}</Markdown>
             </div>
           </article>

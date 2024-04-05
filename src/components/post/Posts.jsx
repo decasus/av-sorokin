@@ -30,14 +30,14 @@ const Posts = ({ initialData }) => {
   }, [inView]);
 
   return (
-    <div>
+    <>
       {posts.map((post, id) => (
         <PostPreview post={post} id={id} key={id} />
       ))}
       <div ref={ref} style={{ display: "flex", justifyContent: "center" }}>
         {!endOfPage && <Spinner />}
       </div>
-    </div>
+    </>
   );
 };
 
