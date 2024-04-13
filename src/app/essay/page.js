@@ -10,7 +10,7 @@ const Essay = () => {
                     <div className="essay__image">
                         <Image src={essay} width={300} alt="essay"/>
                     </div>
-                    <div className="essay__text">
+                    <div className="essay__text text-justify	">
                         <div className="essay__text-title">Почему я выбрал профессию учителя</div>
                         <p>Мне всегда нравились сильные, ловкие, выносливые люди, спортсмены и путешественники. Я
                             перечитал
