@@ -2,7 +2,7 @@
   margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
-  @apply border rounded-md pr-4 justify-start gap-8 shadow;
+  @apply rounded-md pr-4 justify-start gap-8;
   &__image {
     min-width: 300px;
     height: auto;
@@ -10,7 +10,6 @@
     aspect-ratio: 4 / 3;
     img {
       object-fit: cover;
-      @apply rounded-l-md;
     }
   }
   &__content {
@@ -85,9 +84,6 @@
       margin: 0px 0 20px 0px;
       order: 1;
       border-radius: 0 !important;
-      img {
-        @apply rounded-t-md;
-      }
     }
     &__content {
       @apply mx-5 mt-0 text-sm;
