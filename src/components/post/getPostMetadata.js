@@ -4,20 +4,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import matter from "gray-matter";
-import { getCldImageUrl } from "next-cloudinary";
-
-const createBlurImage = async (image) => {
-  const imageUrl = getCldImageUrl({
-    src: image,
-    width: 100,
-  });
-
-  const response = await fetch(imageUrl);
-  const arrayBuffer = await response.arrayBuffer();
-  const buffer = Buffer.from(arrayBuffer);
-  const base64 = buffer.toString("base64");
-  return `data:${response.type};base64,${base64}`;
-};
+import { createBlurImage } from "@/utils/createBlurImage";
 
 const getPostMetadata = async (offset, limit, all = false) => {
   const folder = path.join(process.cwd(), "src/posts");
